@@ -26,7 +26,7 @@ class TimeLogger:
             #     pass
             # else:
             #     pass
-            self.logger[method.__name__.upper()].append((es - ts) * self.base)
+            self.logger[method.__qualname__.upper()].append((es - ts) * self.base)
             return result
 
         return timed
